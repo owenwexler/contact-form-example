@@ -17,7 +17,6 @@ const ContactForm: React.FC = () => {
   const [showAlert, setShowAlert] = useState<boolean>(false);
 
   const handleSubmit = async (formData: FormData) => {
-    console.log('handleSubmit run');
     const result = await submitAction(formData);
     setShowAlert(true);
     // @ts-expect-error
