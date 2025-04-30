@@ -1,14 +1,14 @@
-'use client';
+"use client"
 
 import React, { useEffect, useRef, useState } from "react"
 import { useActionState } from "react"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Loader2, CheckCircle2, XCircle } from "lucide-react"
-import { sendMessage } from "@/actions/actions"
+import { sendMessage } from "../actions/actions"
+import { Card, CardContent } from "../components/ui/card"
+import { Input } from "../components/ui/input"
+import { Textarea } from "../components/ui/textarea"
+import { Button } from "../components/ui/button"
+import { Alert, AlertDescription, AlertTitle } from "../components/ui/alert"
 
 const ContactForm: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
